@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">14.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <Name>TscFrontEnd</Name>
+    <RootNamespace>TscFrontEnd</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>745dab0c-4658-4338-995e-ca7c91adc954</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>node_modules\@vue\cli-service\bin\vue-cli-service.js</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{349c5851-65df-11da-9384-00065b846f21};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
+    <NodejsPort>1337</NodejsPort>
+    <EnableTypeScript>true</EnableTypeScript>
+    <StartWebBrowser>true</StartWebBrowser>
+    <ScriptArguments>serve</ScriptArguments>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="public\favicon.ico" />
+    <Content Include="public\index.html" />
+    <Content Include="src\App.vue" />
+    <Content Include="src\components\breadcrumb-nav.vue" />
+    <Content Include="src\components\Footer.vue" />
+    <Content Include="src\components\fullscreen.vue" />
+    <Content Include="src\components\language-list.vue" />
+    <Content Include="src\components\language-switch.vue" />
+    <Content Include="src\components\shrinkable-menu\components\sidebarMenu.vue" />
+    <Content Include="src\components\shrinkable-menu\components\sidebarMenuShrink.vue" />
+    <Content Include="src\components\shrinkable-menu\shrinkable-menu.vue" />
+    <Content Include="src\components\shrinkable-menu\styles\menu.less" />
+    <Content Include="src\components\tags-page-opened.vue" />
+    <Content Include="src\lib\demo.js" />
+    <Content Include="src\views\home\home.vue" />
+    <Content Include="src\components\lock\components\lock-page.vue">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\components\lock\components\unlock.vue">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\components\lock\lock.vue">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\components\lock\styles\unlock.less">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\views\about.vue" />
+    <Content Include="src\views\login.vue" />
+    <Content Include="src\views\main.less" />
+    <Content Include="src\views\main.vue" />
+    <Content Include="tsconfig.json" />
+    <Content Include="package.json" />
+    <Content Include="README.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="dist\" />
+    <Folder Include="public\" />
+    <Folder Include="src\" />
+    <Folder Include="src\assets\" />
+    <Folder Include="src\components\" />
+    <Folder Include="src\components\lock\" />
+    <Folder Include="src\components\lock\components\" />
+    <Folder Include="src\components\lock\styles\" />
+    <Folder Include="src\components\shrinkable-menu\" />
+    <Folder Include="src\components\shrinkable-menu\components\" />
+    <Folder Include="src\components\shrinkable-menu\styles\" />
+    <Folder Include="src\lib\" />
+    <Folder Include="src\images\" />
+    <Folder Include="src\store\" />
+    <Folder Include="src\store\entities\" />
+    <Folder Include="src\store\modules\" />
+    <Folder Include="src\views\" />
+    <Folder Include="src\router\" />
+    <Folder Include="src\views\home\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\main.ts" />
+    <None Include="src\shims-vue.d.ts" />
+    <None Include="src\shims-tsx.d.ts" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="babel.config.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="src\lib\demo.d.ts" />
+    <TypeScriptCompile Include="src\lib\ajax.ts" />
+    <TypeScriptCompile Include="src\lib\appconst.ts">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="src\lib\url.ts" />
+    <TypeScriptCompile Include="src\lib\util.ts">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="src\lib\WebAPI.ts">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="src\router\index.ts">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="src\router\router.ts">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="src\store\entities\entity.ts" />
+    <TypeScriptCompile Include="src\store\entities\page-request.ts" />
+    <TypeScriptCompile Include="src\store\entities\page-result.ts" />
+    <TypeScriptCompile Include="src\store\entities\role.ts" />
+    <TypeScriptCompile Include="src\store\entities\user.ts" />
+    <TypeScriptCompile Include="src\store\index.ts">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="src\store\modules\account.ts" />
+    <TypeScriptCompile Include="src\store\modules\app.ts" />
+    <TypeScriptCompile Include="src\store\modules\list-actions.ts" />
+    <TypeScriptCompile Include="src\store\modules\list-module.ts" />
+    <TypeScriptCompile Include="src\store\modules\list-mutations.ts" />
+    <TypeScriptCompile Include="src\store\modules\list-state.ts" />
+    <TypeScriptCompile Include="src\store\modules\role.ts" />
+    <TypeScriptCompile Include="src\store\modules\user.ts" />
+  </ItemGroup>
+  <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsToolsV2.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:48022/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost:1337</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
