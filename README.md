@@ -1,3 +1,3 @@
-w# TscFrontEnd
+w# Vue and typescript sample 
 
 
