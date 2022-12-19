@@ -140,7 +140,6 @@
   </template>
   
   <script>
-  //https://github.com/tookit/vue-material-admin/tree/master/src/api
 
   import DemoData from '@/demodata'
   import AccountCard from '@/components/card/AccountCard.vue';
