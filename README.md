@@ -3,8 +3,7 @@
 
 ## **Vue and typescript sample**
 ######
-###### This is a demonstration project only. There is no functionality or link to databases.
-###### The project shows the use of Vue and Typescript. The following npm packages are used:
+###### This is a demonstration project only. There is no functionality or link to databases. The project shows the use of Vue and Typescript. The following npm packages are used:
 ###### 
 ######  - Vuex
 ######    A simple store with 4 modules
