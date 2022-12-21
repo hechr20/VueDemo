@@ -12,4 +12,4 @@
 ######    
 ######  There are examples of components that take the starting point in html input.
 
-[![My Skills](https://skills.thijs.gg/icons?i=ts,html)](https://skills.thijs.gg)
+[![My Skills](https://skills.thijs.gg/icons?i=ts)](https://skills.thijs.gg)
