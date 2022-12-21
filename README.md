@@ -12,3 +12,4 @@
 ######    
 ######  There are examples of components that take the starting point in html input.
 
+[![My Skills](https://skills.thijs.gg/icons?i=ts,html,css,wasm)](https://skills.thijs.gg)
